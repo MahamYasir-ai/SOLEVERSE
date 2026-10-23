@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-electric-lime: #C8FF35;
+  --color-hot-pink: #FF4F9A;
+  --color-tangerine: #FF873D;
+  --color-deep-plum: #542C70;
+  --color-soft-lavender: #E7D9FF;
+  --color-off-white: #FAF8F4;
+  --color-near-black: #0E0D12;
+  --color-card-dark: #17151C;
+  --color-card-elevated: #1F1C26;
+
+  --font-display: "Outfit", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  body {
+    background-color: #0E0D12;
+    color: #FAF8F4;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #C8FF35;
+    color: #0E0D12;
+  }
+}
+
+/* Custom scrollbar matching dark club aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0E0D12;
+}
+::-webkit-scrollbar-thumb {
+  background: #2E2A38;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8FF35;
+}
+
+/* Neon glow utility classes */
+.glow-lime {
+  box-shadow: 0 0 25px rgba(200, 255, 53, 0.35);
+}
+.glow-pink {
+  box-shadow: 0 0 25px rgba(255, 79, 154, 0.35);
+}
+.glow-plum {
+  box-shadow: 0 0 30px rgba(84, 44, 112, 0.5);
+}
+.glow-orange {
+  box-shadow: 0 0 25px rgba(255, 135, 61, 0.35);
+}
+
+/* Club background subtle mesh */
+.bg-club-radial {
+  background: radial-gradient(circle at 50% 0%, rgba(84, 44, 112, 0.25) 0%, rgba(14, 13, 18, 1) 75%);
+}

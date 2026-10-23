@@ -1,0 +1,6 @@
+{
+  "name": "SOLEVERSE — The Next Generation of Sneaker Culture",
+  "description": "Premium Gen Z streetwear and sneaker culture ecommerce platform with live inventory, WhatsApp checkout, order tracking, and interactive SoleBot.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,850 @@
+# PROJECT: SOLEVERSE — THE NEXT GENERATION OF SNEAKER CULTURE
+
+Act as a senior full-stack developer, UI/UX designer, ecommerce architect, motion designer, and conversion optimization specialist. Build a complete, premium, highly interactive, production-style sneaker ecommerce website named **SOLEVERSE**.
+
+The website should sell trendy Gen Z sneakers, streetwear shoes, chunky sneakers, futuristic runners, retro basketball shoes, skate shoes, minimalist everyday sneakers, platform shoes, and limited-edition drops.
+
+This must be a substantial multi-page ecommerce application with a large product catalog, realistic shopping functionality, responsive layouts, persistent local storage, smooth animations, customer support, order management, and WhatsApp integration.
+
+Do not create just a landing page, a static mockup, or a collection of non-functional buttons. Build the complete frontend experience with functional navigation, product filtering, cart management, checkout validation, order creation, and customer interactions.
+
+## 1. TECHNOLOGY STACK
+
+Use the following technologies:
+
+- Next.js with the App Router.
+- React and TypeScript.
+- Tailwind CSS for all primary styling.
+- Lucide React for icons.
+- Framer Motion or Motion for smooth animations and micro-interactions.
+- Browser LocalStorage for persistent cart, wishlist, recently viewed products, customer preferences, and demo orders.
+- Reusable React components and well-organized project architecture.
+- Next.js Image component or an appropriate image-loading solution for product imagery.
+- React Context or an equivalent lightweight state-management approach for shared cart, wishlist, and customer state.
+
+Use a compatible current Next.js and Tailwind CSS setup. Ensure all dependencies, imports, routes, and components work together.
+
+Use client components only where browser APIs, event handlers, animations, or interactive state require them. Access LocalStorage safely after client-side mounting to avoid hydration errors.
+
+Do not require a paid API, external database, or secret API key for the basic shopping experience. All essential demo features must work locally.
+
+## 2. BRAND IDENTITY AND DESIGN SYSTEM
+
+Brand name: SOLEVERSE
+
+Tagline: "Your world. Your soles."
+
+Brand personality:
+- Gen Z.
+- Bold, expressive, playful, fashion-forward.
+- Futuristic streetwear.
+- Premium but accessible.
+- Experimental, creative, energetic.
+- Social-media-inspired product discovery.
+
+Create a distinctive visual identity with the following palette:
+
+- Electric lime: #C8FF35
+- Hot pink: #FF4F9A
+- Tangerine orange: #FF873D
+- Deep plum: #542C70
+- Soft lavender: #E7D9FF
+- Off-white: #FAF8F4
+- Near-black: #17151C
+
+Use the lime, pink, orange, and plum as controlled accents, with clean light backgrounds and dark editorial sections. Do not make every component brightly colored. Maintain a polished balance between playful color and premium product presentation.
+
+Typography:
+- Use a bold, contemporary display font for hero headlines.
+- Use a clean sans-serif font for body text.
+- Use oversized typography, editorial product labels, compact badges, and carefully spaced layouts.
+
+Visual direction:
+- Large sneaker photography.
+- Cropped editorial images.
+- Asymmetric grids.
+- Rounded product cards mixed with sharp editorial panels.
+- Oversized headlines.
+- Neon accent lines and soft gradients.
+- Floating decorative shapes.
+- Subtle grain or texture where appropriate.
+- Tasteful glow effects and hover transformations.
+- High-quality product detail layouts.
+- Consistent spacing and accessible contrast.
+
+Avoid generic ecommerce templates, excessive glassmorphism, childish cartoon styling, unnecessary gradients everywhere, and overcrowded product cards.
+
+The result should look like a fashion startup that could genuinely launch online.
+
+## 3. HEADER AND NAVIGATION
+
+Build a polished, responsive navigation system.
+
+Announcement bar:
+- Rotating promotional messages.
+- Example: "FREE SHIPPING ON ORDERS OVER PKR 15,000".
+- "NEW DROP LIVE NOW".
+- "YOUR FIRST ORDER? GET 10% OFF".
+- Include a dismiss option.
+
+Main header:
+- SOLEVERSE wordmark and custom logo treatment.
+- Shop.
+- New Drops.
+- Best Sellers.
+- Men.
+- Women.
+- Unisex.
+- Streetwear.
+- Sale.
+- Search.
+- Wishlist icon with a live count.
+- Cart icon with a live item count.
+- Mobile menu.
+
+On desktop, implement a stylish mega-menu with category links, featured collections, and editorial imagery.
+
+On mobile, implement a fully functional slide-out navigation drawer with accessible controls.
+
+Header behavior:
+- Sticky header.
+- Smooth transition on scroll.
+- Search opens an interactive search panel.
+- Search results appear as the user types.
+- Search supports product names, categories, colors, and SKU.
+- Include a recent searches section and a useful empty state.
+
+## 4. HOMEPAGE
+
+Create an impressive, visually rich homepage with the following sections.
+
+### A. Hero section
+
+Headline:
+"NOT MADE TO BLEND IN."
+
+Supporting copy:
+"Big energy. Better kicks. Find the pair that speaks your language."
+
+Buttons:
+- SHOP THE DROP
+- EXPLORE ALL SNEAKERS
+
+Use an editorial sneaker hero image, oversized typography, animated floating graphic elements, colorful background shapes, and a subtle entrance animation.
+
+Add a small label such as "DROP 001 / YOUR NEXT OBSESSION".
+
+Make the composition adapt beautifully to mobile.
+
+### B. Category explorer
+
+Create image-led category tiles for:
+- Chunky Sneakers
+- Retro Runners
+- Basketball
+- Skate Culture
+- Futuristic Kicks
+- Everyday Essentials
+- Platform Sneakers
+- Limited Editions
+
+Each tile must navigate to a correctly filtered collection.
+
+### C. New drop section
+
+Show a horizontally scrollable product carousel featuring the latest arrivals.
+
+Each product card must include:
+- Product image.
+- Brand.
+- Product name.
+- Price in PKR.
+- Optional original price and sale badge.
+- Color options.
+- New or limited-drop badge.
+- Wishlist toggle.
+- Quick-add button.
+- Product detail link.
+- Hover image change when a second image is available.
+
+### D. Shop by vibe
+
+Build a visually distinctive section with four fashion moods:
+- Main Character Energy.
+- Clean Girl / Clean Boy.
+- Street Mode.
+- Futurecore.
+
+Each mood should have its own visual styling and lead to a relevant collection.
+
+### E. Best sellers
+
+Display a responsive product grid with sorting and a "View All" link.
+
+### F. Editorial campaign banner
+
+Use a large campaign image and bold copy:
+"YOUR FIT ISN'T COMPLETE WITHOUT THE KICKS."
+
+CTA: BUILD YOUR ROTATION.
+
+### G. Limited-edition drops
+
+Include countdown-style drop cards, release labels, and sold-out states.
+
+Countdowns must be based on actual configured dates, not arbitrary static timers. Expired drops should display an appropriate ended or available status.
+
+### H. Customer reviews
+
+Create realistic demo testimonials clearly intended as sample content. Include customer initials or avatars, review text, star ratings, and the relevant product.
+
+Do not claim that fictional reviews are verified purchases.
+
+### I. Newsletter signup
+
+Include an email input, validation, success state, and locally stored demo subscriptions. Explain that subscriptions are saved locally in this demo rather than sent to a real mailing service.
+
+### J. Footer
+
+Include:
+- Shop categories.
+- Customer support.
+- Order tracking.
+- Returns and exchanges.
+- Size guide.
+- Shipping information.
+- About SOLEVERSE.
+- Contact.
+- WhatsApp support.
+- Social media links.
+- Newsletter.
+- Payment method icons or labels.
+- Privacy policy.
+- Terms and conditions.
+
+Do not invent real social profiles. Use clearly configurable placeholder links until official URLs are supplied.
+
+## 5. LARGE PRODUCT CATALOG
+
+Create at least 60 distinct seed products distributed across multiple collections, with a data model that makes expanding to hundreds of products straightforward.
+
+Use unique product IDs, SKUs, names, prices, descriptions, images, colors, sizes, stock levels, category assignments, ratings, tags, and sale information.
+
+Represent a diverse catalog including:
+- Chunky dad sneakers.
+- Retro runners.
+- Minimal white sneakers.
+- Black monochrome sneakers.
+- Neon statement sneakers.
+- Pastel sneakers.
+- Platform sneakers.
+- Basketball-inspired shoes.
+- Skate sneakers.
+- Trail-inspired lifestyle sneakers.
+- Futuristic sculptural sneakers.
+- Slip-on casual sneakers.
+- Lightweight daily walking sneakers.
+- Limited-edition colorways.
+- Affordable everyday sneakers.
+- Premium statement pieces.
+
+Use original fictional product and collection names rather than falsely claiming affiliation with real brands. If recognizable real-world products are included, represent them accurately and do not fabricate official endorsements.
+
+Product imagery should be high quality, visually varied, and relevant to each product. Never show the same shoe image for every product. Use reliable image URLs or local assets and provide graceful image fallbacks.
+
+Do not use emojis as substitutes for product photography.
+
+Create a centralized product data file so that new products can be added without rewriting UI components.
+
+Suggested product fields:
+id, sku, slug, name, brand, category, collection, description, price, compareAtPrice, images, colors, availableSizes, stock, tags, rating, reviewCount, isNew, isBestSeller, isLimitedEdition, isFeatured, isOnSale.
+
+## 6. SHOP AND COLLECTION PAGES
+
+Create dedicated routes for:
+- All sneakers.
+- New arrivals.
+- Best sellers.
+- Men.
+- Women.
+- Unisex.
+- Chunky sneakers.
+- Retro runners.
+- Basketball-inspired sneakers.
+- Skate sneakers.
+- Futuristic sneakers.
+- Everyday sneakers.
+- Platform sneakers.
+- Sale.
+- Individual editorial collections.
+
+Each collection page must have:
+- Collection title and description.
+- Optional campaign banner.
+- Product count.
+- Responsive product grid.
+- Sort dropdown.
+- Filter sidebar on desktop.
+- Filter drawer on mobile.
+- Active filter chips.
+- Clear all filters.
+- Pagination or functional load-more interaction.
+
+Filtering must actually update the displayed products.
+
+Support filters for:
+- Category.
+- Price range in PKR.
+- Shoe size.
+- Color.
+- Availability.
+- Sale items.
+- New arrivals.
+- Product style.
+- Rating.
+
+Support sorting by:
+- Featured.
+- Newest.
+- Price low to high.
+- Price high to low.
+- Highest rated.
+- Best selling, using a clearly defined demo metric.
+
+Preserve useful collection and filter state in URL query parameters where practical.
+
+Provide useful empty states when no products match.
+
+## 7. PRODUCT DETAIL PAGE
+
+Every product must have a dedicated dynamic route, such as /products/neon-pulse-runner.
+
+Include:
+- Large image gallery.
+- Multiple product images.
+- Thumbnail navigation.
+- Image zoom or lightbox.
+- Product title.
+- Brand or fictional collection.
+- SKU.
+- Price in PKR.
+- Sale price and original price where applicable.
+- Available color variants.
+- Clickable size selector.
+- Size guide modal.
+- Stock availability.
+- Quantity selector.
+- Add to cart.
+- Buy now.
+- Wishlist button.
+- Delivery estimate section with configurable demo information.
+- Product description.
+- Materials and care details.
+- Shipping and returns accordion.
+- Customer reviews.
+- Related products.
+- Recently viewed products.
+
+Require a valid size and quantity before adding shoes to the cart.
+
+Changing color should update the selected variant and imagery when variant data exists.
+
+Prevent purchases above the available demo stock.
+
+Display useful toast notifications for cart additions, wishlist changes, validation errors, and other actions.
+
+## 8. SIZE GUIDE
+
+Create a polished size guide modal supporting common EU, UK, and US size references.
+
+Include a conversion table, foot-measurement instructions, and a disclaimer that sizing varies by product and manufacturer.
+
+Where a real manufacturer size chart is unavailable, label conversions as approximate.
+
+The selected size must be carried through to the cart and order.
+
+## 9. CART AND LOCAL STORAGE
+
+Build a fully functional shopping cart.
+
+Each line item must include:
+- Product image.
+- Product name.
+- Selected color.
+- Selected shoe size.
+- Unit price.
+- Quantity.
+- Line subtotal.
+- Remove action.
+- Optional save-for-later action.
+
+Features:
+- Slide-out mini-cart.
+- Full cart page.
+- Increase and decrease quantity.
+- Remove items.
+- Clear cart with confirmation.
+- Persistent cart across refreshes.
+- Unique variants based on product, color, and size.
+- Free shipping progress indicator.
+- Promo code input.
+- Subtotal calculation.
+- Discount calculation.
+- Shipping calculation.
+- Estimated total.
+- Continue shopping.
+- Proceed to checkout.
+
+Implement a small configurable set of demo discount codes, such as:
+- SOLE10: 10% off eligible merchandise.
+- FIRST500: PKR 500 off eligible orders.
+
+Clearly define eligibility and validate the codes. Do not allow stacking unless explicitly configured.
+
+Store the cart in LocalStorage and update the UI immediately after changes.
+
+Handle corrupted stored data gracefully and use safe defaults.
+
+Currency: PKR, formatted using Intl.NumberFormat.
+
+Use Pakistani number formatting where appropriate.
+
+All calculations must be derived from product and cart data, not hardcoded totals.
+
+## 10. WISHLIST AND PERSONALIZATION
+
+Build a dedicated wishlist page.
+
+Users should be able to:
+- Add or remove products.
+- View saved items.
+- Add a wishlist item to the cart after selecting a size.
+- See empty-wishlist guidance.
+- Retain their wishlist after refresh.
+- Move items between the wishlist and cart.
+
+Also implement:
+- Recently viewed products.
+- A recently viewed carousel.
+- A "You might also like" section.
+- Locally persisted product preferences where appropriate.
+
+Do not imply that local demo data synchronizes across devices.
+
+## 11. CHECKOUT EXPERIENCE
+
+Create a complete multi-step checkout interface.
+
+Step 1: Contact and delivery details.
+- Full name.
+- Email.
+- Pakistani phone number.
+- Address.
+- City.
+- Area.
+- Postal code.
+- Optional delivery instructions.
+
+Step 2: Delivery method.
+- Standard delivery.
+- Express delivery where configured.
+- Delivery charges and estimated times clearly displayed as demo estimates.
+
+Step 3: Payment method.
+- Cash on Delivery.
+- Bank transfer instructions using placeholder demo information.
+- Optional online payment integration placeholder.
+
+Do not collect or store real payment card details. Do not claim that payments are processed when no payment provider is integrated.
+
+Step 4: Order review.
+- Items.
+- Sizes and colors.
+- Discounts.
+- Shipping.
+- Final amount.
+- Customer information.
+- Terms acknowledgement.
+
+Implement field validation, helpful error messages, loading states, and a final order confirmation.
+
+When the user confirms a demo order:
+1. Generate a unique order number.
+2. Save the order in LocalStorage.
+3. Store line-item snapshots and the final order amount.
+4. Update demo inventory carefully.
+5. Clear the purchased cart items.
+6. Display a confirmation page.
+7. Provide a button to send the order summary through WhatsApp.
+
+Do not create an order if validation fails.
+
+Clearly label the application as a demo storefront with locally stored orders, not a live commercial payment system.
+
+## 12. ORDER TRACKING AND ORDER HISTORY
+
+Create an order tracking page where customers can enter their order number and the phone number or email used at checkout.
+
+Search only the locally stored demo orders and verify the supplied matching details before showing order information.
+
+Display:
+- Order number.
+- Order date.
+- Purchased products.
+- Selected sizes and colors.
+- Payment method.
+- Delivery address.
+- Total amount.
+- Demo fulfillment status.
+
+Create a realistic demo status timeline:
+- Order placed.
+- Confirmed.
+- Processing.
+- Shipped.
+- Out for delivery.
+- Delivered.
+
+Status progression must use actual order status data. Do not display a live courier tracking claim without a real courier integration.
+
+Also create a My Orders page for the current demo session or locally stored customer identity.
+
+## 13. WHATSAPP INTEGRATION
+
+Integrate WhatsApp using click-to-chat links with a configurable support phone number.
+
+Store the WhatsApp number in a centralized configuration file using the international country code without the plus sign, and leave it as an obvious placeholder until a real number is provided.
+
+Implement:
+- Floating WhatsApp support button.
+- Product inquiry.
+- Cart inquiry.
+- Order confirmation sharing.
+- Delivery and return questions.
+- Complaint submission.
+- Customer service contact.
+
+When a customer chooses WhatsApp checkout, generate a readable message containing:
+- Order number when available.
+- Product names.
+- Quantities.
+- Sizes.
+- Colors.
+- Item prices.
+- Subtotal.
+- Shipping.
+- Discount.
+- Final total.
+- Customer name and delivery details only when necessary and after clear user action.
+
+URL-encode the message correctly using the WhatsApp click-to-chat format.
+
+Opening WhatsApp must be initiated by the customer. Do not claim that the message has been delivered, the order has been accepted, or a WhatsApp conversation has been completed automatically.
+
+If the support number is not configured, show a clear setup message rather than silently opening an invalid link.
+
+## 14. AI-STYLE CUSTOMER SUPPORT CHATBOT
+
+Create a polished floating chatbot branded "SOLE BOT".
+
+The chatbot should look like a friendly sneaker expert with a distinctive avatar, animated typing indicator, conversation bubbles, timestamps, quick replies, and a responsive chat panel.
+
+Welcome message:
+"Yo! Welcome to SOLEVERSE 👟 What can I help you find today?"
+
+Quick actions:
+- Find my size.
+- Track my order.
+- Product recommendations.
+- Shipping information.
+- Returns and exchanges.
+- Report a problem.
+- Talk to support.
+
+The chatbot should handle:
+- Product discovery.
+- Product availability.
+- Price and discount questions.
+- Size guide questions.
+- Shipping policy.
+- Return and exchange policy.
+- Order tracking.
+- Order complaints.
+- Damaged or incorrect item reports.
+- General customer support.
+- WhatsApp handoff.
+
+Build a structured local knowledge base containing accurate information about the products, available sizes, stock, shipping rules, returns, discounts, and order tracking.
+
+The chatbot must consult actual application data for product, price, inventory, and order questions. Do not invent stock availability, discounts, tracking details, or policies.
+
+For the first version, implement a useful rule-based intent detection and searchable knowledge base so the chatbot works without an API key.
+
+Create a clean chatbot service interface that can later be connected to an LLM API. Do not pretend the rule-based version is a live generative AI model.
+
+If a question is not understood, politely explain the limitation and offer relevant suggested questions or a WhatsApp handoff.
+
+### Complaint workflow
+
+Allow customers to submit a complaint with:
+- Complaint category.
+- Order number, if relevant.
+- Description.
+- Optional contact details.
+- Preferred resolution.
+
+Validate required fields and generate a unique complaint reference.
+
+Save the complaint locally and show a confirmation with the reference number.
+
+Offer a button to continue the complaint through WhatsApp.
+
+Explain that complaints are stored only in this browser demo and are not automatically delivered to the store.
+
+## 15. SEARCH AND PRODUCT DISCOVERY
+
+Create a dedicated search results page.
+
+Support:
+- Live suggestions.
+- Product name matching.
+- Category matching.
+- Tag matching.
+- Color matching.
+- SKU matching.
+- Search result counts.
+- Sorting.
+- Filters.
+- No-results recommendations.
+- Recent search history.
+
+Implement a playful sneaker finder quiz that asks about:
+- Preferred style.
+- Main color.
+- Budget.
+- Intended use.
+- Preferred shoe size.
+
+Use the answers to recommend matching products from the actual catalog.
+
+Include a "Find My Pair" CTA on the homepage.
+
+## 16. MOTION AND MICRO-INTERACTIONS
+
+Use animations purposefully throughout the website.
+
+Implement:
+- Smooth page transitions where appropriate.
+- Hero text entrance animations.
+- Scroll-triggered section reveals.
+- Product image zoom on hover.
+- Product card lift effects.
+- Wishlist heart animation.
+- Add-to-cart feedback.
+- Animated mini-cart.
+- Smooth mobile navigation drawer.
+- Interactive filter drawer.
+- Animated accordions.
+- Toast notifications.
+- Skeleton loading states where appropriate.
+- Smooth carousel interactions.
+- Subtle floating decorative elements.
+- A refined custom cursor effect only on desktop if it does not impair usability.
+
+Honor prefers-reduced-motion.
+
+Avoid excessive animation, scroll hijacking, layout shifts, and animations that make shopping difficult.
+
+## 17. RESPONSIVE DESIGN
+
+Design mobile-first and thoroughly support:
+- Small phones.
+- Large phones.
+- Tablets.
+- Laptops.
+- Wide desktop screens.
+
+Requirements:
+- No horizontal page overflow.
+- Touch-friendly buttons.
+- Properly scaled typography.
+- Mobile product grid with two columns when space permits.
+- Filter drawer on small screens.
+- Desktop filter sidebar.
+- Responsive mega-menu.
+- Mobile slide-out navigation.
+- Readable checkout forms.
+- Sticky mobile add-to-cart bar on product pages where appropriate.
+- Safe spacing around floating WhatsApp and chatbot buttons.
+- Accessible modal sizes and scroll behavior.
+
+Test the major page layouts at approximately 360px, 390px, 768px, 1024px, and 1440px widths.
+
+## 18. ACCESSIBILITY AND QUALITY
+
+Implement:
+- Semantic HTML.
+- Accessible form labels.
+- Keyboard navigation.
+- Visible focus indicators.
+- Appropriate ARIA labels for icon-only controls.
+- Accessible modal behavior.
+- Useful alt text.
+- Sufficient color contrast.
+- Reduced-motion support.
+- Clear validation messages.
+- Error and empty states.
+
+Ensure that buttons have actual behavior and links lead to valid routes.
+
+Prevent duplicate order creation from repeated clicks. Disable the submit button while an order is being created.
+
+## 19. REQUIRED ROUTES
+
+Implement these pages using the Next.js App Router:
+
+/
+ /shop
+ /collections/[slug]
+ /products/[slug]
+ /new-arrivals
+ /best-sellers
+ /sale
+ /categories/[slug]
+ /search
+ /find-your-pair
+ /cart
+ /wishlist
+ /checkout
+ /order-confirmation/[orderId]
+ /track-order
+ /my-orders
+ /size-guide
+ /about
+ /contact
+ /shipping
+ /returns
+ /faq
+ /privacy
+ /terms
+
+Create appropriate not-found and error states.
+
+Avoid duplicating entire page implementations. Reuse shared components, collection configuration, and data models.
+
+## 20. PROJECT STRUCTURE
+
+Organize the code cleanly, for example:
+
+app/
+  page.tsx
+  shop/
+  collections/[slug]/
+  products/[slug]/
+  categories/[slug]/
+  search/
+  cart/
+  wishlist/
+  checkout/
+  order-confirmation/[orderId]/
+  track-order/
+  my-orders/
+  find-your-pair/
+  about/
+  contact/
+  shipping/
+  returns/
+  faq/
+  privacy/
+  terms/
+  layout.tsx
+  globals.css
+
+components/
+  layout/
+  home/
+  products/
+  collections/
+  cart/
+  checkout/
+  chatbot/
+  support/
+  forms/
+  ui/
+
+context/
+  CartContext.tsx
+  WishlistContext.tsx
+  StoreContext.tsx
+
+data/
+  products.ts
+  collections.ts
+  policies.ts
+  chatbotKnowledge.ts
+  demoOrders.ts
+
+lib/
+  storage.ts
+  currency.ts
+  pricing.ts
+  validation.ts
+  search.ts
+  recommendations.ts
+  whatsapp.ts
+  orders.ts
+  inventory.ts
+
+types/
+  index.ts
+
+public/
+  images/
+  icons/
+
+Adjust this structure if needed, but preserve clear separation of concerns.
+
+## 21. FUNCTIONAL ACCEPTANCE CHECKLIST
+
+Before considering the project complete, verify that:
+
+1. The homepage is fully designed and responsive.
+2. At least 60 unique products appear in the catalog.
+3. Every product has a unique detail route.
+4. Product search returns relevant results.
+5. Filters and sorting work together correctly.
+6. Color and size selection works.
+7. Cart calculations are accurate.
+8. Cart state persists after refreshing.
+9. Wishlist state persists after refreshing.
+10. Promo codes validate correctly.
+11. Checkout validates customer details.
+12. A demo order is saved with a unique reference.
+13. Repeated clicks cannot create duplicate orders.
+14. Order tracking matches saved order information.
+15. Complaint submissions create reference numbers.
+16. The chatbot responds using the store's real demo data.
+17. WhatsApp messages are correctly formatted.
+18. Missing WhatsApp configuration is handled gracefully.
+19. Mobile navigation and filter drawers work.
+20. Product imagery has useful fallbacks.
+21. No major route renders a blank page.
+22. No obvious console errors, hydration errors, or broken imports remain.
+23. All major buttons and links perform their advertised actions.
+24. The UI does not claim that simulated services are live integrations.
+
+## 22. FINAL BUILD INSTRUCTIONS
+
+Start by establishing the design system, shared application layout, centralized product catalog, types, and state management.
+
+Then implement the homepage, catalog, product detail pages, cart, wishlist, checkout, order tracking, WhatsApp workflows, and customer support chatbot.
+
+Use real React state and reusable components. Do not simulate functionality merely by changing button labels.
+
+Use realistic, varied product content and high-quality imagery. Include meaningful loading, empty, success, and error states.
+
+If a feature requires external infrastructure, implement a clearly identified working demo version and isolate the integration point for future production use.
+
+Do not stop after producing the homepage or a plan. Build the application and ensure the files are internally consistent and runnable.
+
+The final result should feel like a complete, colorful, fashion-forward sneaker destination that Gen Z shoppers would genuinely enjoy exploring and that can serve as a standout full-stack portfolio project.
