@@ -196,8 +196,8 @@ const AppContent: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#0E0D12] text-[#FAF8F4] antialiased selection:bg-[#C8FF35] selection:text-[#0E0D12]">
-      {/* 1. Announcement Bar & Fixed Header Container (stays fixed and visible as user scrolls down) */}
-      <div className="fixed top-0 left-0 right-0 z-50 w-full shadow-2xl backdrop-blur-md bg-[#17151C]/95">
+      {/* 1. Announcement Bar & Header Container (scrolls naturally with page content) */}
+      <div className="relative z-40 w-full bg-[#17151C]">
         <AnnouncementBar />
         <Header
           onOpenSearch={() => setIsSearchOpen(true)}
@@ -205,8 +205,8 @@ const AppContent: React.FC = () => {
         />
       </div>
 
-      {/* 2. Main Route Canvas (offset for fixed header) */}
-      <main className="flex-1 pt-28 sm:pt-[116px]">
+      {/* 2. Main Route Canvas */}
+      <main className="flex-1">
         {renderRoute()}
       </main>
 

@@ -13,11 +13,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { navigate } = useNavigate();
   const { toggleWishlist, isInWishlist, addToCart } = useStore();
   const [showQuickSizes, setShowQuickSizes] = useState(false);
-  const [imageError, setImageError] = useState(false);
+  const [imgSrc, setImgSrc] = useState(product.images[0]);
+  const [hasFailed, setHasFailed] = useState(false);
 
   const isSaved = isInWishlist(product.id);
-  // Keep the exact same primary image consistently to avoid showing a different shoe on hover!
-  const shoeImage = product.images[0];
 
   const handleCardClick = () => {
     navigate(`/products/${product.slug}`);
@@ -27,6 +26,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     e.stopPropagation();
     addToCart(product, size, product.colors[0]?.name, 1);
     setShowQuickSizes(false);
+  };
+
+  const handleImageError = () => {
+    if (!hasFailed) {
+      setHasFailed(true);
+      setImgSrc(product.images[1] || 'https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1000&q=80');
+    }
   };
 
   return (
@@ -65,25 +71,15 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           </span>
         ) : null}
 
-        {/* Product Image: Always shows the EXACT same shoe, with slick scale zoom on hover */}
-        {!imageError ? (
-          <img
-            src={shoeImage}
-            alt={product.name}
-            onError={() => setImageError(true)}
-            referrerPolicy="no-referrer"
-            className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-500 ease-out"
-          />
-        ) : (
-          <div className="w-full h-full flex flex-col items-center justify-center p-6 bg-stone-900 text-stone-300 text-center">
-            <span className="text-2xl font-black text-[#C8FF35] mb-1 font-display">
-              SOLEVERSE
-            </span>
-            <span className="text-xs font-mono uppercase text-stone-400">
-              {product.categoryLabel}
-            </span>
-          </div>
-        )}
+        {/* Product Image: Always shows the sneaker with smooth hover scale */}
+        <img
+          src={imgSrc}
+          alt={product.name}
+          onError={handleImageError}
+          referrerPolicy="no-referrer"
+          loading="lazy"
+          className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-500 ease-out"
+        />
 
         {/* Quick Size Flyout Overlay */}
         {showQuickSizes && (

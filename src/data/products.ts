@@ -28,8 +28,8 @@ export const PRODUCTS: Product[] = [
     price: 24900,
     compareAtPrice: 28500,
     images: [
-      "/public/assets/aistudio/image_3ed77f38.png",
-      "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1000&q=80"
+      "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1608667508764-33cf0726b13a?auto=format&fit=crop&w=1000&q=80"
     ],
     colors: [
       { name: "Multiverse Neon (Lime/Pink/Plum)", hex: "#C8FF35" },
@@ -1655,7 +1655,7 @@ export const PRODUCTS: Product[] = [
     price: 34500,
     compareAtPrice: 38000,
     images: [
-      "/public/assets/aistudio/image_3ed77f38.png",
+      "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?auto=format&fit=crop&w=1000&q=80",
       "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1000&q=80"
     ],
     colors: [{ name: "Cyber Neon Special Edition", hex: "#C8FF35" }],
@@ -1814,7 +1814,10 @@ export const PRODUCTS: Product[] = [
     materials: "Matte TPU exo-cage, carbon fiber, high-density PEBA.",
     care: "Clean with microfiber cloth.",
     price: 37500,
-    images: ["/public/assets/aistudio/image_3ed77f38.png"],
+    images: [
+      "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=1000&q=80"
+    ],
     colors: [{ name: "Stealth Blackout & Lime Glow", hex: "#C8FF35" }],
     availableSizes: [40, 41, 42, 43, 44],
     stockPerSize: { 40: 2, 41: 3, 42: 3, 43: 2, 44: 1 },

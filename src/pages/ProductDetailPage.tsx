@@ -101,6 +101,9 @@ export const ProductDetailPage: React.FC<ProductDetailPageProps> = ({ slug }) =>
             <img
               src={product.images[activeImageIndex] || product.images[0]}
               alt={`${product.name} angle ${activeImageIndex + 1}`}
+              onError={(e) => {
+                e.currentTarget.src = 'https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1000&q=80';
+              }}
               className="w-full h-full object-cover object-center transition-all duration-300"
               referrerPolicy="no-referrer"
             />
